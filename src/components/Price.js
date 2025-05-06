@@ -6,7 +6,7 @@ export default function Price() {
   const [price, setPrice] = useState(null);
 
   useEffect(() => {
-    fetch(`https://api.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=YOUR_API_KEY`)
+    fetch(`https://api.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=cle1::twvnr-1746484441620-68c220ac8e36`)
       .then((response) => response.json())
       .then((data) => setPrice(data));
   }, [symbol]);
